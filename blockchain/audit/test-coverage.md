@@ -13,4 +13,4 @@ File                                  |  % Stmts | % Branch |  % Funcs |  % Line
 
 
 
-Full coverage report of related contracts is [here](coverage).
+Full coverage report of related contracts is [here](https://coveralls.io/github/BlockchainLabsNZ/poa-popa).
