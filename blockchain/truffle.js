@@ -26,6 +26,14 @@ module.exports = {
         rinkeby: {
             provider: new HDWalletProvider(mnemonic, rinkebyUrl),
             network_id: 4,
-        },
+        }
+        ,
+        mocha: {
+            reporter: 'eth-gas-reporter',
+            reporterOptions : {
+                currency: 'USD',
+                gasPrice: 21
+            }
+        } 
     },
 };
