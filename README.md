@@ -109,7 +109,12 @@ _Note:_ in the property `thumbnails` you can found the url of the front and back
 npm install -g truffle
 ```
 2. switch to `blockchain` folder
-3. run tests
+3. Install dependencies
+```
+npm install
+```
+4. Setup up `.env` file, copy `.env.example` from the root directory into the `blockchain` folder
+5. Run tests
 ```
 truffle test
 ```

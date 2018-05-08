@@ -1,4 +1,5 @@
 'use strict';
+require('dotenv').config();
 var path = require('path');
 var fs = require('fs');
 var Web3 = require('web3');
