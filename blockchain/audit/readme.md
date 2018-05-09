@@ -77,7 +77,13 @@ The audit report focuses on the following key areas, although this list is not e
 
 ### Minor
 
-- None found
+- **Repeated checks can be replaced by modifier** - `Best practice`
+Checks for contract owner and user existence are repeated for many times in different functions in ProofOfPhysicalAddress.sol. Suggest to use a modifier to replace repeated codes... [View on GitHub](https://github.com/BlockchainLabsNZ/poa-popa/issues/1)
+<br>
+
+- **The claims registry doesn't implement the claims registry interface** - `Best practice`
+The EthereumClaimsRegistry contract does technically implement all the features in the interface, but it's not explicitly declaring itself to be inheriting from the interface.... [View on GitHub](https://github.com/BlockchainLabsNZ/poa-popa/issues/2)
+
 
 ### Moderate
 
@@ -93,7 +99,10 @@ The audit report focuses on the following key areas, although this list is not e
 
 ## Observations
 
-### TODO ###
+### Event log is beneficial to the observation of setting variables
+When calling `setSigner()` with a new signer address, it is highly recommended that you emit an event to log the execution. This is not standard behavior, though it helps you track the history and lets you notice the variable has been changed. 
+Similar functions are listed below:
+`setRegistry()`, `registerAddress()`, `unregisterAddress()`
 
 ## Conclusion
 
