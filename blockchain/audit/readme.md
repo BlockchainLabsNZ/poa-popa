@@ -104,9 +104,12 @@ When calling `setSigner()` with a new signer address, it is highly recommended t
 Similar functions are listed below:
 `setRegistry()`, `registerAddress()`, `unregisterAddress()`
 
+### Third party Tokens can be sent to the contract with no way of retrieving them
+It is possible for someone to transfer tokens to the contract address, and the contract has no way of retrieving them. This is not a security issue, but more of an annoyance. Someone could create a token with hate speech in the name and it could potentially show up in your token balances on EtherScan. An example of a similar safety function in the latest version of MinimeToken `claimToken()` [(example)](https://github.com/Giveth/minime/blob/ea04d950eea153a04c51fa510b068b9dded390cb/contracts/MiniMeToken.sol#L512)
+
 ## Conclusion
 
-### TODO ###
+Overall the code is well written and we have not identified any potential vulnerabilities. These contracts have a low level risk of being tampering with data from the inspected contracts. There is high test coverage which should increase confidence in the security of these contracts, and their maintainability in the future.
 
 ___
 
