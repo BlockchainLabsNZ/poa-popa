@@ -42,30 +42,38 @@ Tests are conducted on the Kovan test network. The following contracts have been
 
 
 __Address Data__
-
-[1]: `name: 'john doe', country: 'us', state: 'ca', city: 'san francisco', address: '185 berry st', zip: '94107', priceWei: '40000000000000000', cc: '8hwpyynkd9'`
+```
+[1]: `name: 'john doe', 
+   country: 'us', 
+     state: 'ca', 
+      city: 'san francisco', 
+   address: '185 berry st', 
+       zip: '94107', 
+  priceWei: '40000000000000000', 
+        cc: '8hwpyynkd9'`
 [2]: `name: '!@#!()(!*@$()*!@*(UD@( 22321(F*@U!_(*FH@(*!UJIOFJJFI#QJFILWJF(@EEOL contract (blah) { }',
-  country: '3',
-  state: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-  city: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-  address: '@#!@# (*&^',
-  zip: 'aaa',
+   country: '3',
+     state: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+      city: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+   address: '@#!@# (*&^',
+       zip: 'aaa',
   priceWei: '40000000000000000',
-  cc: '123456',
-  shaCC: '0xc888c9ce9e098d5864d3ded6ebcc140a12142263bace3a23a36f9905f12bd64a'`
+        cc: '123456',
+     shaCC: '0xc888c9ce9e098d5864d3ded6ebcc140a12142263bace3a23a36f9905f12bd64a'`
 [3]: `name: 'another name',
-  country: 'nz',
-  state: 'na',
-  city: 'wellington',
-  address: '123 tory st',
-  zip: '123',
+   country: 'nz',
+     state: 'na',
+      city: 'wellington',
+   address: '123 tory st',
+       zip: '123',
   priceWei: '40000000000000000',
-  cc: '123456'`
+        cc: '123456'`
 [4]: `name: 'another name',
-  country: 'nz',
-  state: 'na',
-  city: 'wellington',
-  address: '123 tory st',
-  zip: '321',
+   country: 'nz',
+     state: 'na',
+      city: 'wellington',
+   address: '123 tory st',
+       zip: '321',
   priceWei: '40000000000000000',
-  cc: '54321',`
+        cc: '54321',`
+  ```
