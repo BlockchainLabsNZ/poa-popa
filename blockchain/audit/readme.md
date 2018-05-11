@@ -73,8 +73,6 @@ The audit report focuses on the following key areas, although this list is not e
 </tr>
 </table>
 
-### TODO ###
-
 ### Minor
 
 - **Repeated checks can be replaced by modifier** - `Best practice`
@@ -100,7 +98,7 @@ The EthereumClaimsRegistry contract does technically implement all the features 
 ## Observations
 
 ### Event log is beneficial to the observation of setting variables
-When calling `setSigner()` with a new signer address, it is highly recommended that you emit an event to log the execution. This is not standard behavior, though it helps you track the history and lets you notice the variable has been changed. 
+When calling `setSigner()` with a new signer address, it is highly recommended that you emit an event to log the execution. This is not standard behavior, though it helps you track the history and lets you notice the variable has been changed.
 Similar functions are listed below:
 `setRegistry()`, `registerAddress()`, `unregisterAddress()`
 
