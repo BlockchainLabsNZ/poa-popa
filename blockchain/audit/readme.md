@@ -82,12 +82,14 @@ Line61, Line66, Line74, Line83
 Check for user existence:
 Line97, Line111, Line129, Line147, Line161, Line169, Line204, Line221, Line293, Line325
 [View on GitHub](https://github.com/BlockchainLabsNZ/poa-popa/issues/1)
+  - [x] Fixed - https://github.com/poanetwork/poa-popa/pull/127
 <br>
 
 - **The claims registry doesn't implement the claims registry interface** - `Best practice`
 The claims registry doesn't implement the claims registry interface - it does implement all the features in the interface - however by not explicitly declaring inheritance of the interface the project is not able to benefit from the additional checks that the Solidity compiler would perform if it was declared.
 e.g contract EthereumClaimsRegistry is EthereumClaimsRegistryInterface {
 [View on GitHub](https://github.com/BlockchainLabsNZ/poa-popa/issues/2)
+  - [x] Fixed - https://github.com/poanetwork/poa-popa/pull/128
 
 
 ### Moderate
@@ -108,13 +110,15 @@ e.g contract EthereumClaimsRegistry is EthereumClaimsRegistryInterface {
 When calling `setSigner()` with a new signer address, it is highly recommended that you emit an event to log the execution. This is not standard behavior, though it helps you track the history and lets you notice the variable has been changed.
 Similar functions are listed below:
 `setRegistry()`, `registerAddress()`, `unregisterAddress()`
+  - [x] Fixed - https://github.com/poanetwork/poa-popa/pull/129
 
 ### Third party Tokens can be sent to the contract with no way of retrieving them
 It is possible for someone to transfer tokens to the contract address when they meant to send ETH. It is best practice to implement a function for the owner to retrieve tokens - An example is the `claimToken()` safety function in the latest version of MinimeToken `claimToken()` [(example)](https://github.com/Giveth/minime/blob/ea04d950eea153a04c51fa510b068b9dded390cb/contracts/MiniMeToken.sol#L497)
+  - [x] Fixed - https://github.com/poanetwork/poa-popa/pull/130
 
 ## Conclusion
 
-Overall the code is well written and we have not identified any potential vulnerabilities. These contracts have a low level risk of being tampering with data from the inspected contracts. There is high test coverage which should increase confidence in the security of these contracts, and their maintainability in the future.
+Overall the code is well written and we have not identified any potential vulnerabilities. These contracts have a low level risk of being tampering with data from the inspected contracts. There is high test coverage which should increase confidence in the security of these contracts, and their maintainability in the future. Their team was very responsive throughout the process and has addressed all the issues we mentioned.
 
 ___
 
